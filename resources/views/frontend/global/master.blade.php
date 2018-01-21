@@ -6,18 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Lotus Real</title>
-        <link href="{!! asset('public/css/bootstrap/bootstrap.min.css')!!}" rel="stylesheet" type="text/css">
+        <link href="{!! asset('public/semantic/semantic.min.css')!!}" rel="stylesheet" type="text/css">
         <link href="{!! asset('public/css/custom.css')!!}" rel="stylesheet" type="text/css">
 
         <!-- Fonts -->
         <script type="text/javascript" src="{!! asset('public/js/jquery-3.2.1.min.js')!!}"></script>
-        <script type="text/javascript" src="{!! asset('public/js/bootstrap/bootstrap.min.js')!!}"></script>
         <!-- Styles -->
 
     </head>
     <body>
-        @yield('content')
+        <div class="ui grid" >
+            @yield('content')
+        </div>
+
 
     </body>
+    <footer>
 
+        <script type="text/javascript" src="{!! asset('public/semantic/semantic.min.js')!!}"></script>
+    </footer>
 </html>
